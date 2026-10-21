@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>David Molero Berrocal · Técnico web</title>
-<meta name="description" content="Portfolio de David Molero Berrocal, técnico web en Sevilla: tiendas online con WordPress y WooCommerce, SEO técnico, automatización de catálogos y contenido 3D.">
+<meta name="description" content="Portfolio de David Molero Berrocal, desarrollador web en Sevilla: aplicaciones Full Stack con .NET y Angular, tiendas online con WordPress y WooCommerce, SEO técnico, automatización de catálogos y contenido 3D.">
 <meta property="og:title" content="David Molero Berrocal · Técnico web">
 <meta property="og:description" content="Tiendas online con WordPress y WooCommerce, SEO técnico, automatización y contenido 3D.">
 <meta property="og:image" content="https://davidmobe97.github.io/img/ficha_producto.jpg">
@@ -105,7 +105,23 @@ section{padding:60px 0}
 
 <section id="proyectos"><div class="wrap">
 <h2>Proyectos</h2>
-<p class="intro">Mi trabajo principal es la web y la tienda online de Syros Maquinaria, una empresa de Sevilla que distribuye maquinaria y monta talleres de automoción llave en mano. El código es privado porque pertenece a la empresa; aquí enseño el resultado y cómo lo hice.</p>
+<p class="intro">Un proyecto Full Stack propio con el código abierto en GitHub y mi trabajo principal: la web y la tienda online de Syros Maquinaria, una empresa de Sevilla que distribuye maquinaria y monta talleres de automoción llave en mano. El código de Syros es privado porque pertenece a la empresa; de esos proyectos enseño el resultado y cómo los hice.</p>
+
+<div class="proy inv">
+<div class="proy__img"><a href="https://github.com/davidmobe97/gestor-elevadores" target="_blank" rel="noopener"><img src="img/gestor_elevadores.png" alt="Panel del gestor de mantenimiento de elevadores hecho con .NET y Angular" loading="lazy" width="1366" height="820"></a></div>
+<div>
+<span class="tag">Full Stack · .NET · Angular</span>
+<h3>Gestor de mantenimiento de elevadores</h3>
+<p>Aplicación web para que una empresa instaladora controle los elevadores que monta en talleres. Nace de mi trabajo como electromecánico: saber qué equipos tienen la revisión anual vencida y qué averías están pendientes.</p>
+<ul>
+<li>API REST en ASP.NET Core (.NET 10) con Entity Framework Core, DTOs, validaciones y reglas de negocio que responden 409 con un mensaje claro.</li>
+<li>Frontend en Angular 22 con componentes standalone, signals, formularios reactivos y buscador con RxJS.</li>
+<li>Inicio de sesión con JWT y roles: el administrador gestiona clientes y equipos y el técnico registra revisiones e incidencias.</li>
+<li>Tests de dominio y de integración con xUnit, que arrancan la API completa y comprueban las respuestas 401, 403 y 201.</li>
+</ul>
+<div class="chips"><span>C#</span><span>.NET 10</span><span>ASP.NET Core</span><span>EF Core</span><span>Angular</span><span>TypeScript</span><span>JWT</span><span>xUnit</span></div>
+<p style="margin-top:16px"><a class="link" href="https://github.com/davidmobe97/gestor-elevadores" target="_blank" rel="noopener">Ver el código en GitHub →</a></p>
+</div></div>
 
 <div class="proy">
 <div class="proy__img"><img src="img/web_home.jpg" alt="Página de inicio de syrosmaquinaria.com" loading="lazy" width="1200" height="675"></div>
@@ -201,9 +217,11 @@ add_action( <span style="color:#fca5a5">'woocommerce_single_product_summary'</sp
 <h2>Tecnologías</h2>
 <p class="intro">Lo que uso en el día a día y lo que he estudiado.</p>
 <div class="tec">
-<div><h4>Web</h4><p>HTML5 · CSS3 · JavaScript · PHP · WordPress · WooCommerce · Elementor</p></div>
+<div><h4>Web y CMS</h4><p>JavaScript · PHP · WordPress · WooCommerce · Elementor · API REST</p></div>
 <div><h4>SEO y analítica</h4><p>Google Search Console · Google Analytics 4 · SEO técnico · datos estructurados · redirecciones 301</p></div>
-<div><h4>Datos y back-end</h4><p>SQL · MySQL · Oracle (PL/SQL) · Java SE / EE · Spring · Hibernate · Angular</p></div>
+<div><h4>.NET y back-end</h4><p>C# · .NET 10 · ASP.NET Core Web API · Entity Framework Core · JWT · xUnit · Java SE / EE · Spring · Hibernate</p></div>
+<div><h4>Front-end</h4><p>Angular · TypeScript · RxJS · HTML5 · CSS3 / SCSS · diseño responsive</p></div>
+<div><h4>Bases de datos y herramientas</h4><p>SQL · MySQL / MariaDB · SQLite · Oracle (PL/SQL) · Git · GitHub · Swagger / OpenAPI</p></div>
 <div><h4>3D y vídeo</h4><p>Blender · Unreal Engine 5 · Remotion (React) · FFmpeg</p></div>
 </div>
 </div></section>
